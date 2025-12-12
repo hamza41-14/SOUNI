@@ -256,7 +256,7 @@
   <!-- --- أقسام --- -->
   <nav class="categories" aria-label="أقسام المتجر">
     <button class="active" onclick="filterCategory('all')">الكل</button>
-     <button onclick="filterCategory('قمصان')">العطور</button>
+     <button onclick="filterCategory('العطور')">العطور</button>
     <button onclick="filterCategory('قمصان')">قمصان</button>
     <button onclick="filterCategory('بناطيل')">بناطيل</button>
     <button onclick="filterCategory('جلابيات')">جلابيات</button>
@@ -286,55 +286,55 @@
   <script>
     const products = [
       
-       { id: 1, name:"YOU" ,price: 300, category: "العطور", description:"", img: "WhatsApp Image 2025-12-12 à 16.31.07_5ff495ef.jpg"" },
+       { id: 1, name:"YOU" ,price: 300, category: "العطور", description:"", img: "WhatsApp Image 2025-12-12 à 16.31.07_5ff495ef.jpg" },
       { id: 2, name: "CREED", price: 300, category: "العطور", description: "", img: "WhatsApp Image 2025-12-12 à 16.31.06_348eb3af.jpg" },
       { id: 3, name:"BLack Lexes" ,price: 300, category: "العطور", description:" ", img: "WhatsApp Image 2025-12-12 à 16.31.06_e89c707b.jpg" },
       { id: 4, name:"Jean Paul Elixur" ,price: 400, category: "العطور", description:" ", img: "WhatsApp Image 2025-12-12 à 16.31.07_51d00c13.jpg" },
        { id: 5, name:"Jean Paul Parfum" ,price: 400, category: "العطور", description:"", img: "WhatsApp Image 2025-12-12 à 16.31.08_96b9bd5b.jpg" },
-       { id: 5, name:"Jean Paul Ultra male" ,price: 400, category: "العطور", description:"", img: "WhatsApp Image 2025-12-12 à 16.31.08_96b9bd5b.jpg" },
+       { id: 6, name:"Jean Paul Ultra male" ,price: 400, category: "العطور", description:"", img: "WhatsApp Image 2025-12-12 à 16.31.08_96b9bd5b.jpg" },
 
 
       
-      { id: 1, name:"قميص  اوفرسايت" ,price: 300, category: "قمصان", description:"قمصان صفيفة ", img: "IMG-20250814-WA0020.jpg" },
-      { id: 2, name: "اوفرسيات اسود", price: 300, category: "قمصان", description: "قميص مريح وانيق", img: "IMG-20250814-WA0015.jpg" },
-      { id: 3, name:"قميص ملون" ,price: 300, category: "قمصان", description:"قمصان صفيفة ", img: "IMG-20250814-WA0010.jpg" },
-      { id: 4, name:"polo lacoste" ,price: 400, category: "قمصان", description:"قمصان صفيفة ", img: "WhatsApp Image 2025-09-08 à 17.53.09_59eea3a5.jpg" },
-       { id: 5, name:"polo_couleur" ,price: 400, category: "قمصان", description:"قمصان صفيفة ", img: "WhatsApp Image 2025-09-08 à 17.53.09_9568ceee.jpg" },
+      { id: 7, name:"قميص  اوفرسايت" ,price: 300, category: "قمصان", description:"قمصان صفيفة ", img: "IMG-20250814-WA0020.jpg" },
+      { id: 8, name: "اوفرسيات اسود", price: 300, category: "قمصان", description: "قميص مريح وانيق", img: "IMG-20250814-WA0015.jpg" },
+      { id: 9, name:"قميص ملون" ,price: 300, category: "قمصان", description:"قمصان صفيفة ", img: "IMG-20250814-WA0010.jpg" },
+      { id: 10, name:"polo lacoste" ,price: 400, category: "قمصان", description:"قمصان صفيفة ", img: "WhatsApp Image 2025-09-08 à 17.53.09_59eea3a5.jpg" },
+       { id: 11, name:"polo_couleur" ,price: 400, category: "قمصان", description:"قمصان صفيفة ", img: "WhatsApp Image 2025-09-08 à 17.53.09_9568ceee.jpg" },
 
-      { id: 6, name: "polo nf1", price: 350, category: "قمصان", description: "قميص مريح وانيق", img: "WhatsApp Image 2025-09-23 à 17.11.20_65722500.jpg" },
-      { id: 7, name:"polo nf2" ,price: 350, category: "قمصان", description:"قمصان صفيفة ", img: "WhatsApp Image 2025-09-23 à 17.11.52_75a53469.jpg" },
-      { id: 8, name:"polo nf3" ,price: 350, category: "قمصان", description:"قمصان صفيفة ", img: "WhatsApp Image 2025-09-23 à 17.12.51_87387e48.jpg" },
-       { id: 9, name:"polo nf3" ,price: 350, category: "قمصان", description:"قمصان صفيفة ", img: "WhatsApp Image 2025-09-23 à 17.12.52_007a8018.jpg" },
-        { id: 10, name:"tishor ov" ,price: 250, category: "قمصان", description:"قمصان صفيفة ", img: "WhatsApp Image 2025-10-04 à 16.12.23_850654c9.jpg" },
+      { id: 12, name: "polo nf1", price: 350, category: "قمصان", description: "قميص مريح وانيق", img: "WhatsApp Image 2025-09-23 à 17.11.20_65722500.jpg" },
+      { id: 13, name:"polo nf2" ,price: 350, category: "قمصان", description:"قمصان صفيفة ", img: "WhatsApp Image 2025-09-23 à 17.11.52_75a53469.jpg" },
+      { id: 14, name:"polo nf3" ,price: 350, category: "قمصان", description:"قمصان صفيفة ", img: "WhatsApp Image 2025-09-23 à 17.12.51_87387e48.jpg" },
+       { id: 15, name:"polo nf3" ,price: 350, category: "قمصان", description:"قمصان صفيفة ", img: "WhatsApp Image 2025-09-23 à 17.12.52_007a8018.jpg" },
+        { id: 16, name:"tishor ov" ,price: 250, category: "قمصان", description:"قمصان صفيفة ", img: "WhatsApp Image 2025-10-04 à 16.12.23_850654c9.jpg" },
 
       
 
     
        
-      { id: 11, name: "Jeans cargo", price: 400, category: "بناطيل", description: "مجموعه انيقة", img: "WhatsApp Image 2025-09-08 à 18.47.13_a2785712.jpg" },
-      { id: 12, name: "TUSU", price: 300, category: "بناطيل", description: "مجموعه انيقة", img: "IMG-20250814-WA0007.jpg" },
-     { id: 13, name: "jougine 2", price: 300, category: "بناطيل", description: "مجموعه انيقة", img: "WhatsApp Image 2025-10-04 à 16.12.26_a6194c47.jpg" },
-     { id: 14, name: "jougine 1", price: 300, category: "بناطيل", description: "مجموعه انيقة", img: "WhatsApp Image 2025-10-04 à 16.12.32_d4f750b4.jpg" },
+      { id: 17, name: "Jeans cargo", price: 400, category: "بناطيل", description: "مجموعه انيقة", img: "WhatsApp Image 2025-09-08 à 18.47.13_a2785712.jpg" },
+      { id: 18, name: "TUSU", price: 300, category: "بناطيل", description: "مجموعه انيقة", img: "IMG-20250814-WA0007.jpg" },
+     { id: 19, name: "jougine 2", price: 300, category: "بناطيل", description: "مجموعه انيقة", img: "WhatsApp Image 2025-10-04 à 16.12.26_a6194c47.jpg" },
+     { id: 20, name: "jougine 1", price: 300, category: "بناطيل", description: "مجموعه انيقة", img: "WhatsApp Image 2025-10-04 à 16.12.32_d4f750b4.jpg" },
      
      
 
       
-      { id: 15, name: "جلابية فاخرة" ,price: 300, category: "جلابيات", description: "جلابية ذهبية", img: "WhatsApp Image 2025-09-20 à 13.58.33_65a55f84.jpg" },
-      { id: 16, name:"جلابية صيفية", price: 300, category: "جلابيات", description: "جلابية مريحة", img: "WhatsApp Image 2025-09-20 à 13.58.32_d4211c91.jpg" },
-      { id: 17, name: "جلابية صيفية", price: 300, category: "جلابيات",description:"جلابية صيفية", img: "WhatsApp Image 2025-09-20 à 13.58.33_acee1576.jpg" },
-      { id: 18, name: "جلابية بيضاء", price: 300, category: "جلابيات", description: "جلابية", img: "WhatsApp Image 2025-09-20 à 13.58.34_5ccd43a5.jpg" },
-      { id: 19, name: "جلابية قطنية", price: 300, category: "جلابيات", description: "جلابية ملونة جذابة", img: "WhatsApp Image 2025-09-20 à 13.58.34_6c42508b.jpg" },
+      { id: 21, name: "جلابية فاخرة" ,price: 300, category: "جلابيات", description: "جلابية ذهبية", img: "WhatsApp Image 2025-09-20 à 13.58.33_65a55f84.jpg" },
+      { id: 22, name:"جلابية صيفية", price: 300, category: "جلابيات", description: "جلابية مريحة", img: "WhatsApp Image 2025-09-20 à 13.58.32_d4211c91.jpg" },
+      { id: 23, name: "جلابية صيفية", price: 300, category: "جلابيات",description:"جلابية صيفية", img: "WhatsApp Image 2025-09-20 à 13.58.33_acee1576.jpg" },
+      { id: 24, name: "جلابية بيضاء", price: 300, category: "جلابيات", description: "جلابية", img: "WhatsApp Image 2025-09-20 à 13.58.34_5ccd43a5.jpg" },
+      { id: 25, name: "جلابية قطنية", price: 300, category: "جلابيات", description: "جلابية ملونة جذابة", img: "WhatsApp Image 2025-09-20 à 13.58.34_6c42508b.jpg" },
 
 
       
-      { id: 20, name:"جلابية مغربية+بسرواله", price: 550, category: "جلابيات", description: "جلابية مغربية", img: "WhatsApp Image 2025-09-22 à 14.25.02_1ed5d828.jpg" },
-      { id: 21, name: "جلابية مغربية+بسرواله", price: 550, category: "جلابيات",description:"جلابية انيقة", img: "WhatsApp Image 2025-09-22 à 14.25.03_5edc54af.jpg" },
-      { id: 22, name: "جلابية مغربية+بسرواله ", price: 550, category: "جلابيات", description: "  جلابية صفيفة", img: "WhatsApp Image 2025-09-22 à 14.25.04_2d0972d2.jpg" },
-      { id: 23, name: "جلابية مغربية+بسرواله ", price: 550, category: "جلابيات", description: "جلابية جذابة", img: "WhatsApp Image 2025-09-22 à 14.25.04_fc82bb12.jpg" },
+      { id: 26, name:"جلابية مغربية+بسرواله", price: 550, category: "جلابيات", description: "جلابية مغربية", img: "WhatsApp Image 2025-09-22 à 14.25.02_1ed5d828.jpg" },
+      { id: 27, name: "جلابية مغربية+بسرواله", price: 550, category: "جلابيات",description:"جلابية انيقة", img: "WhatsApp Image 2025-09-22 à 14.25.03_5edc54af.jpg" },
+      { id: 28, name: "جلابية مغربية+بسرواله ", price: 550, category: "جلابيات", description: "  جلابية صفيفة", img: "WhatsApp Image 2025-09-22 à 14.25.04_2d0972d2.jpg" },
+      { id: 29, name: "جلابية مغربية+بسرواله ", price: 550, category: "جلابيات", description: "جلابية جذابة", img: "WhatsApp Image 2025-09-22 à 14.25.04_fc82bb12.jpg" },
 
 
-      { id: 24, name: "طواقي",price: 30, category: "طواقي", description: "طاقية  مريحة", img: "téléchargement (1).jpg"},
-      { id: 25, name:"طاقية الخليجية", price: 50, category: "طواقي", description: "طاقية  عصرية", img: "images.jpg" }
+      { id: 30, name: "طواقي",price: 30, category: "طواقي", description: "طاقية  مريحة", img: "téléchargement (1).jpg"},
+      { id: 31, name:"طاقية الخليجية", price: 50, category: "طواقي", description: "طاقية  عصرية", img: "images.jpg" }
     ];
 
     const productsContainer = document.getElementById('productsContainer');
@@ -439,6 +439,7 @@
   </script>
 </body>
 </html>
+
 
 
 
