@@ -256,6 +256,7 @@
   <!-- --- أقسام --- -->
   <nav class="categories" aria-label="أقسام المتجر">
     <button class="active" onclick="filterCategory('all')">الكل</button>
+     <button onclick="filterCategory('قمصان')">العطور</button>
     <button onclick="filterCategory('قمصان')">قمصان</button>
     <button onclick="filterCategory('بناطيل')">بناطيل</button>
     <button onclick="filterCategory('جلابيات')">جلابيات</button>
@@ -285,7 +286,15 @@
   <script>
     const products = [
       
-    
+       { id: 1, name:"YOU" ,price: 300, category: "العطور", description:"", img: "WhatsApp Image 2025-12-12 à 16.31.07_5ff495ef.jpg"" },
+      { id: 2, name: "CREED", price: 300, category: "العطور", description: "", img: "WhatsApp Image 2025-12-12 à 16.31.06_348eb3af.jpg" },
+      { id: 3, name:"BLack Lexes" ,price: 300, category: "العطور", description:" ", img: "WhatsApp Image 2025-12-12 à 16.31.06_e89c707b.jpg" },
+      { id: 4, name:"Jean Paul Elixur" ,price: 400, category: "العطور", description:" ", img: "WhatsApp Image 2025-12-12 à 16.31.07_51d00c13.jpg" },
+       { id: 5, name:"Jean Paul Parfum" ,price: 400, category: "العطور", description:"", img: "WhatsApp Image 2025-12-12 à 16.31.08_96b9bd5b.jpg" },
+       { id: 5, name:"Jean Paul Ultra male" ,price: 400, category: "العطور", description:"", img: "WhatsApp Image 2025-12-12 à 16.31.08_96b9bd5b.jpg" },
+
+
+      
       { id: 1, name:"قميص  اوفرسايت" ,price: 300, category: "قمصان", description:"قمصان صفيفة ", img: "IMG-20250814-WA0020.jpg" },
       { id: 2, name: "اوفرسيات اسود", price: 300, category: "قمصان", description: "قميص مريح وانيق", img: "IMG-20250814-WA0015.jpg" },
       { id: 3, name:"قميص ملون" ,price: 300, category: "قمصان", description:"قمصان صفيفة ", img: "IMG-20250814-WA0010.jpg" },
@@ -430,6 +439,7 @@
   </script>
 </body>
 </html>
+
 
 
 
