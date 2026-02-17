@@ -1,306 +1,286 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>متجر سني - الملابس الرجالية</title>
-  <style>
-    /* --- لافتة --- */
-    #main-banner {
-      width: 100%;
-      overflow: hidden;
-      box-shadow: 0 3px 12px rgba(6, 95, 70, 0.3);
-      margin-bottom: 10px;
-      border-radius: 0 0 20px 20px;
-    }
-    #main-banner img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover;
-      border-radius: 0 0 20px 20px;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>متجر سني - الملابس الرجالية</title>
 
-    /* --- هيدر --- */
-    header {
-      background-color: #065f46;
-      color: white;
-      padding: 10px 15px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      border-radius: 0 0 15px 15px;
-      box-shadow: 0 3px 8px rgb(6 95 70 / 0.3);
-      flex-wrap: wrap;
-    }
-    .logo img {
-      height: 45px;
-      border-radius: 10px;
-      object-fit: contain;
-    }
-    .search-bar {
-      flex-grow: 1;
-      display: flex;
-    }
-    .search-bar input {
-      flex-grow: 1;
-      padding: 8px;
-      border-radius: 8px 0 0 8px;
-      border: none;
-      font-size: 0.95rem;
-    }
-    .search-bar button {
-      background-color: #10b981;
-      border: none;
-      color: white;
-      padding: 0 12px;
-      border-radius: 0 8px 8px 0;
-      cursor: pointer;
-      font-size: 1.1rem;
-    }
+<style>
 
-    /* --- قائمة الأقسام --- */
-    nav.categories {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      margin-bottom: 10px;
-      flex-wrap: wrap;
-    }
-    nav.categories button {
-      padding: 6px 12px;
-      border-radius: 12px;
-      border: 1.5px solid #065f46;
-      background-color: white;
-      color: #065f46;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    nav.categories button.active,
-    nav.categories button:hover {
-      background-color: #065f46;
-      color: white;
-    }
+/* --- لافتة --- */
+#main-banner{
+  width:100%;
+  overflow:hidden;
+  box-shadow:0 3px 12px rgba(6,95,70,.3);
+  margin-bottom:10px;
+  border-radius:0 0 20px 20px;
+}
+#main-banner img{
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:cover;
+  border-radius:0 0 20px 20px;
+}
 
-    /* --- المنتجات --- */
-    main#productsContainer {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 12px;
-      padding: 0 10px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    article.product-card {
-      border: 1px solid #d1d5db;
-      border-radius: 12px;
-      padding: 8px;
-      background: white;
-      box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: box-shadow 0.3s;
-    }
-    article.product-card:hover {
-      box-shadow: 0 5px 15px rgb(6 95 70 / 0.2);
-    }
-    article.product-card img {
-      width: 100%;
-      height: 150px;
-      object-fit: contain;
-      border-radius: 12px;
-      margin-bottom: 8px;
-    }
-    .product-info h3 {
-      margin: 0 0 4px;
-      font-size: 1rem;
-      color: #065f46;
-    }
-    .product-info .description {
-      font-size: 0.8rem;
-      color: #6b7280;
-      margin-bottom: 8px;
-      flex-grow: 1;
-    }
-    .product-info .price {
-      font-weight: 700;
-      font-size: 1rem;
-      color: #10b981;
-      margin-bottom: 8px;
-    }
-    .product-info button {
-      background-color: #065f46;
-      border: none;
-      color: white;
-      padding: 6px 0;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 0.95rem;
-      align-self: center; /* لتوسيط الزر في الجزء السفلي */
-      width: 90%;
-      transition: background-color 0.3s;
-    }
-    .product-info button:hover {
-      background-color: #047857;
-    }
+/* --- هيدر --- */
+header{
+  background:#065f46;
+  color:white;
+  padding:10px 15px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  border-radius:0 0 15px 15px;
+  box-shadow:0 3px 8px rgb(6 95 70 / .3);
+  flex-wrap:wrap;
+}
+.logo img{
+  height:45px;
+  border-radius:10px;
+  object-fit:contain;
+}
+.search-bar{
+  flex-grow:1;
+  display:flex;
+}
+.search-bar input{
+  flex-grow:1;
+  padding:8px;
+  border-radius:8px 0 0 8px;
+  border:none;
+  font-size:.95rem;
+}
+.search-bar button{
+  background:#10b981;
+  border:none;
+  color:white;
+  padding:0 12px;
+  border-radius:0 8px 8px 0;
+  cursor:pointer;
+  font-size:1.1rem;
+}
 
-    /* --- سلة المشتريات --- */
-    aside#cart-sidebar {
-      position: fixed;
-      top: 0;
-      right: -360px;
-      width: 360px;
-      height: 100vh;
-      background-color: white;
-      box-shadow: -5px 0 15px rgb(6 95 70 / 0.2);
-      padding: 15px;
-      box-sizing: border-box;
-      overflow-y: auto;
-      transition: right 0.35s ease;
-      z-index: 1100;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      border-radius: 15px 0 0 15px;
-    }
-    aside#cart-sidebar.open { right: 0; }
-    #cart-sidebar h2 {
-      margin: 0 0 10px;
-      color: #065f46;
-      text-align: center;
-    }
-    #cartItemsList { list-style: none; padding: 0; margin: 0; flex-grow: 1; overflow-y: auto; }
-    #cartItemsList li {
-      display: flex;
-      justify-content: space-between;
-      padding: 6px 4px;
-      border-bottom: 1px solid #d1d5db;
-      font-size: 0.95rem;
-      align-items: center;
-    }
-    #cartItemsList li .name { flex-grow: 1; margin-right: 8px; color: #065f46; }
-    #cartItemsList li .price { color: #10b981; font-weight: 700; margin-left: 8px; }
-    #cartItemsList li .remove-btn { background: none; border: none; color: #ef4444; cursor: pointer; font-weight: 700; font-size: 1rem; }
-    #cart-total { font-weight: 700; font-size: 1.1rem; text-align: center; margin: 10px 0; color: #065f46; }
-    #cart-toggle-btn {
-      position: fixed;
-      top: 15px;
-      right: 15px;
-      background-color: #10b981;
-      border: none;
-      border-radius: 50%;
-      width: 45px;
-      height: 45px;
-      color: white;
-      font-size: 1.5rem;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgb(16 185 129 / 0.6);
-      z-index: 1200;
-    }
-    #send-whatsapp-btn {
-      background-color: #25d366;
-      color: white;
-      font-weight: 700;
-      padding: 10px;
-      border: none;
-      border-radius: 8px;
-      margin-top: 8px;
-      cursor: pointer;
-      width: 100%;
-      font-size: 0.95rem;
-    }
-    #send-whatsapp-btn:hover { background-color: #1ebe57; }
+/* --- أقسام --- */
+nav.categories{
+  display:flex;
+  justify-content:center;
+  gap:8px;
+  margin-bottom:10px;
+  flex-wrap:wrap;
+}
+nav.categories button{
+  padding:6px 12px;
+  border-radius:12px;
+  border:1.5px solid #065f46;
+  background:white;
+  color:#065f46;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+nav.categories button.active,
+nav.categories button:hover{
+  background:#065f46;
+  color:white;
+}
 
-    /* --- الفوتر --- */
-    footer {
-      background-color: #065f46;
-      color: white;
-      text-align: center;
-      padding: 10px 5px;
-      font-size: 0.85rem;
-      border-radius: 15px 15px 0 0;
-      box-shadow: 0 -3px 8px rgb(6 95 70 / 0.3);
-    }
+/* --- منتجات --- */
+main#productsContainer{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:12px;
+  padding:0 10px 20px;
+  max-width:1200px;
+  margin:auto;
+}
+article.product-card{
+  border:1px solid #d1d5db;
+  border-radius:12px;
+  padding:8px;
+  background:white;
+  box-shadow:0 2px 6px rgb(0 0 0 / .05);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transition:.3s;
+}
+article.product-card:hover{
+  box-shadow:0 5px 15px rgb(6 95 70 / .2);
+}
+article.product-card img{
+  width:100%;
+  height:150px;
+  object-fit:contain;
+  border-radius:12px;
+  margin-bottom:8px;
+}
+.product-info h3{
+  margin:0 0 4px;
+  font-size:1rem;
+  color:#065f46;
+}
+.product-info .description{
+  font-size:.8rem;
+  color:#6b7280;
+  margin-bottom:8px;
+}
+.product-info .price{
+  font-weight:700;
+  font-size:1rem;
+  color:#10b981;
+  margin-bottom:8px;
+}
+.product-info button{
+  background:#065f46;
+  border:none;
+  color:white;
+  padding:6px 0;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+  width:90%;
+  align-self:center;
+}
 
-    /* --- استجابة --- */
-    @media (max-width:700px){
-      header { flex-direction: column; gap: 8px; }
-      aside#cart-sidebar { width: 100vw; right: -100vw; }
-      aside#cart-sidebar.open { right: 0; }
-      main#productsContainer { grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap:8px; }
-      .product-info button { width: 95%; }
-    }
-  </style>
+/* --- سلة --- */
+aside#cart-sidebar{
+  position:fixed;
+  top:0;
+  right:-360px;
+  width:360px;
+  height:100vh;
+  background:white;
+  box-shadow:-5px 0 15px rgb(6 95 70 / .2);
+  padding:15px;
+  transition:.35s;
+  z-index:1100;
+  display:flex;
+  flex-direction:column;
+  border-radius:15px 0 0 15px;
+}
+aside#cart-sidebar.open{right:0;}
+
+#cartItemsList{
+  list-style:none;
+  padding:0;
+  margin:0;
+  flex-grow:1;
+  overflow-y:auto;
+}
+#cartItemsList li{
+  display:flex;
+  justify-content:space-between;
+  padding:6px 4px;
+  border-bottom:1px solid #ddd;
+  font-size:.95rem;
+}
+#cart-total{
+  font-weight:700;
+  font-size:1.1rem;
+  text-align:center;
+  margin:10px 0;
+  color:#065f46;
+}
+#cart-toggle-btn{
+  position:fixed;
+  top:15px;
+  right:15px;
+  background:#10b981;
+  border:none;
+  border-radius:50%;
+  width:45px;
+  height:45px;
+  color:white;
+  font-size:1.5rem;
+  cursor:pointer;
+  z-index:1200;
+}
+#send-whatsapp-btn{
+  background:#25d366;
+  color:white;
+  font-weight:700;
+  padding:10px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  width:100%;
+}
+
+footer{
+  background:#065f46;
+  color:white;
+  text-align:center;
+  padding:10px;
+  font-size:.85rem;
+}
+
+</style>
 </head>
+
 <body>
 
-  <!-- --- لافتة --- -->
-  <div id="main-banner" aria-label="لافتة متجر سني">
-    <img src="WhatsApp Image 2025-08-09 à 14.55.35_9b6d0811.jpg" alt="لافتة متجر سني تحتوي على اللوغو، صور الملابس، وأرقام الاتصال" />
+<div id="main-banner">
+  <img src="banner.jpg" alt="لافتة متجر سني">
+</div>
+
+<header>
+  <div class="logo">
+    <img src="logo.jpg" alt="لوغو سني">
   </div>
+  <div class="search-bar">
+    <input type="search" id="searchInput" placeholder="ابحث عن منتج..." />
+    <button onclick="searchProducts()">🔍</button>
+  </div>
+</header>
 
-  <!-- --- هيدر --- -->
-  <header>
-    <div class="logo" tabindex="0" aria-label="لوغو متجر سني">
-      <img src="WhatsApp Image 2025-08-09 à 14.05.07_8bd3256d.jpg" alt="لوغو سني" />
-    </div>
-    <div class="search-bar">
-      <input type="search" id="searchInput" placeholder="ابحث عن منتج..." aria-label="بحث في المتجر" />
-      <button aria-label="بحث" onclick="searchProducts()">🔍</button>
-    </div>
-  </header>
+<nav class="categories">
+  <button class="active" onclick="filterCategory('all')">الكل</button>
+  <button onclick="filterCategory('العطور')">العطور</button>
+</nav>
 
-  <!-- --- أقسام --- -->
-  <nav class="categories" aria-label="أقسام المتجر">
-    <button class="active" onclick="filterCategory('all')">الكل</button>
-     <button onclick="filterCategory('العطور')">العطور</button>
-  </nav>
+<main id="productsContainer"></main>
 
-  <!-- --- المنتجات --- -->
-  <main id="productsContainer" aria-live="polite" aria-label="قائمة المنتجات"></main>
+<aside id="cart-sidebar">
+  <h2>سلة المشتريات</h2>
+  <ul id="cartItemsList">
+    <li>السلة فارغة</li>
+  </ul>
+  <p id="cart-total">الإجمالي: 0 أوقية</p>
+  <button id="send-whatsapp-btn" onclick="sendOrderWhatsApp()">إرسال الطلب عبر واتساب</button>
+</aside>
 
-  <!-- --- سلة --- -->
-  <aside id="cart-sidebar" aria-label="سلة المشتريات">
-    <h2>سلة المشتريات</h2>
-    <ul id="cartItemsList" tabindex="0" aria-live="polite">
-      <li>السلة فارغة</li>
-    </ul>
-    <p id="cart-total">الإجمالي: اوقية0</p>
-    <button id="send-whatsapp-btn" aria-label="إرسال الطلب عبر واتساب" onclick="sendOrderWhatsApp()">إرسال الطلب عبر واتساب</button>
-  </aside>
+<button id="cart-toggle-btn">🛒</button>
 
-  <button id="cart-toggle-btn" aria-label="فتح/إغلاق سلة المشتريات">🛒</button>
+<footer>
+  كل الحقوق محفوظة 2025 SUNI ©
+</footer>
 
-  <footer>
-    كل الحقوق محفوظة 2025 SUNI ©
-  </footer>
+<script>
 
-  <script>
-    const products = [
+const products = [
+  { id:1,name:"YOU",price:800,category:"العطور",description:"20ML",img:"1.jpg"},
+  { id:2,name:"CREED",price:800,category:"العطور",description:"20ML",img:"2.jpg"},
+  { id:3,name:"Black Lexes",price:800,category:"العطور",description:"20ML",img:"3.jpg"},
+  { id:4,name:"Jean Paul Elixir",price:800,category:"العطور",description:"20ML",img:"4.jpg"},
+  { id:5,name:"Jean Paul Parfum",price:800,category:"العطور",description:"20ML",img:"5.jpg"},
+  { id:6,name:"Jean Paul Ultra Male",price:800,category:"العطور",description:"20ML",img:"6.jpg"}
+  { id: 7, name:"A" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2025-12-12 à 16.31.06_0be6da55.jpg" },
+
+  
+      { id: 8, name: "B", price: 800, category: "العطور", description: "20ML", img: "WhatsApp Image 2026-02-08 at 00.45.03 (3).jpeg" },
+      { id: 9, name:"C " ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.06.jpeg" },
+      { id: 10, name:"D" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.06 (1).jpeg" },
+      { id: 11, name:"E" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.05.jpeg" },
+      { id: 12, name:"F" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.05 (5).jpeg" },
       
-      { id: 1, name:"YOU" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2025-12-12 à 16.31.07_5ff495ef.jpg" },
-      { id: 2, name: "CREED", price: 800, category: "العطور", description: "20ML", img: "WhatsApp Image 2025-12-12 à 16.31.06_348eb3af.jpg" },
-      { id: 3, name:"BLack Lexes" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2025-12-12 à 16.31.06_e89c707b.jpg" },
-      { id: 4, name:"Jean Paul Elixur" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2025-12-12 à 16.31.07_51d00c13.jpg" },
-      { id: 5, name:"Jean Paul Parfum" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2025-12-12 à 16.31.08_96b9bd5b.jpg" },
-      { id: 6, name:"Jean Paul Ultra male" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2025-12-12 à 16.31.06_0be6da55.jpg" },
-
-      { id: 7, name:"YOU" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2025-12-12 à 16.31.06_0be6da55.jpg" },
-      { id: 8, name: "CREED", price: 800, category: "العطور", description: "20ML", img: "WhatsApp Image 2026-02-08 at 00.45.03 (3).jpeg" },
-      { id: 9, name:"BLack Lexes" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.06.jpeg" },
-      { id: 10, name:"Jean Paul Elixur" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.06 (1).jpeg" },
-      { id: 11, name:"Jean Paul Parfum" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.05.jpeg" },
-      { id: 12, name:"Jean Paul Ultra male" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.05 (5).jpeg" },
-      
-      { id: 13, name:"YOU" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.05 (4).jpeg" }
-      { id: 14, name: "CREED", price: 800, category: "العطور", description: "20ML", img: "WhatsApp Image 2026-02-11 at 18.00.05 (3).jpeg" },
-      { id: 15, name:"BLack Lexes" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.05 (2).jpeg" },
-      { id: 16, name:"Jean Paul Elixur" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.05 (1).jpeg" },
-      { id: 17, name:"Jean Paul Parfum" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.04.jpeg" },
-      { id: 18, name:"Jean Paul Ultra male" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.04 (4).jpeg" },
+      { id: 13, name:"G" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.05 (4).jpeg" }
+      { id: 14, name: "H", price: 800, category: "العطور", description: "20ML", img: "WhatsApp Image 2026-02-11 at 18.00.05 (3).jpeg" },
+      { id: 15, name:"I" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.05 (2).jpeg" },
+      { id: 16, name:"J" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.05 (1).jpeg" },
+      { id: 17, name:"K" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.04.jpeg" },
+      { id: 18, name:"Le" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.04 (4).jpeg" },
 
     
       { id: 19, name:"YOU" ,price: 800, category: "العطور", description:"20ML", img: "WhatsApp Image 2026-02-11 at 18.00.04 (2).jpeg" }
@@ -321,111 +301,124 @@
 
 
 
-        
-    ];
 
-    const productsContainer = document.getElementById('productsContainer');
-    const cartSidebar = document.getElementById('cart-sidebar');
-    const cartToggleBtn = document.getElementById('cart-toggle-btn');
-    const cartItemsList = document.getElementById('cartItemsList');
-    const cartTotal = document.getElementById('cart-total');
-    const searchInput = document.getElementById('searchInput');
-    const categoryButtons = document.querySelectorAll('nav.categories button');
 
-    let cart = [];
-    let filteredCategory = 'all';
 
-    function renderProducts(filter = 'all') {
-      productsContainer.innerHTML = '';`
-      const displayedProducts = filter === 'all' ? products : products.filter(p => p.category === filter);
-      displayedProducts.forEach(product => {
-        const card = document.createElement('article');
-        card.className = 'product-card';
-        card.innerHTML = `
-          <img src="${product.img}" alt="${product.name}" />
-          <div class="product-info">
-            <h3>${product.name}</h3>
-            <p class="description">${product.description}</p>
-            <p class="price">${product.price} أوقية</p>
-            <button onclick="addToCart(${product.id})">أضف إلى السلة</button>
-          </div>
-        `;
-        productsContainer.appendChild(card);
-      });
-    }
 
-    function addToCart(productId) {
-      const product = products.find(p => p.id === productId);
-      cart.push(product);
-      updateCart();
-    }
 
-    function updateCart() {
-      cartItemsList.innerHTML = '';
-      if(cart.length === 0){
-        cartItemsList.innerHTML = '<li>السلة فارغة</li>';
-        cartTotal.textContent = 'الإجمالي: اوقية0';
-        return;
-      }
-      let total = 0;
-      cart.forEach((item,index) => {
-        total += item.price;
-        const li = document.createElement('li');
-        li.innerHTML = `<span class="name">${item.name}</span>
-                        <span class="price">${item.price} أوقية</span>
-                        <button class="remove-btn" onclick="removeFromCart(${index})">✖</button>`;
-        cartItemsList.appendChild(li);
-      });
-      cartTotal.textContent = 'الإجمالي: ' + total + ' أوقية';
-    }
 
-    function removeFromCart(index) {
-      cart.splice(index,1);
-      updateCart();
-    }
 
-    function filterCategory(category){
-      filteredCategory = category;
-      categoryButtons.forEach(btn => btn.classList.remove('active'));
-      document.querySelector(`nav.categories button[onclick="filterCategory('${category}')"]`).classList.add('active');
-      renderProducts(category);
-    }
 
-    function searchProducts(){
-      const query = searchInput.value.toLowerCase();
-      const filtered = products.filter(p => p.name.toLowerCase().includes(query) || p.description.toLowerCase().includes(query));
-      productsContainer.innerHTML = '';
-      filtered.forEach(product => {
-        const card = document.createElement('article');
-        card.className = 'product-card';
-        card.innerHTML = `
-          <img src="${product.img}" alt="${product.name}" />
-          <div class="product-info">
-            <h3>${product.name}</h3>
-            <p class="description">${product.description}</p>
-            <p class="price">${product.price} أوقية</p>
-            <button onclick="addToCart(${product.id})">أضف إلى السلة</button>
-          </div>
-        `;
-        productsContainer.appendChild(card);
-      });
-    }
 
-    cartToggleBtn.addEventListener('click', () => cartSidebar.classList.toggle('open'));
 
-    function sendOrderWhatsApp(){
-      if(cart.length === 0) return alert('السلة فارغة');
-      const phone = "22231513331"; // ضع رقمك هنا
-      let message = "طلب من SUNI:\n";
-      cart.forEach(item => message += `${item.name} - ${item.price} أوقية\n`);
-      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-      window.open(url,'_blank');
-    }
 
-    renderProducts();
-  </script>
+  
+];
+
+const productsContainer=document.getElementById('productsContainer');
+const cartSidebar=document.getElementById('cart-sidebar');
+const cartToggleBtn=document.getElementById('cart-toggle-btn');
+const cartItemsList=document.getElementById('cartItemsList');
+const cartTotal=document.getElementById('cart-total');
+const searchInput=document.getElementById('searchInput');
+
+let cart=[];
+
+function renderProducts(filter='all'){
+  productsContainer.innerHTML='';
+  const displayed=filter==='all'?products:products.filter(p=>p.category===filter);
+  displayed.forEach(product=>{
+    const card=document.createElement('article');
+    card.className='product-card';
+    card.innerHTML=`
+      <img src="${product.img}">
+      <div class="product-info">
+        <h3>${product.name}</h3>
+        <p class="description">${product.description}</p>
+        <p class="price">${product.price} أوقية</p>
+        <button onclick="addToCart(${product.id})">أضف إلى السلة</button>
+      </div>
+    `;
+    productsContainer.appendChild(card);
+  });
+}
+
+function addToCart(id){
+  const product=products.find(p=>p.id===id);
+  cart.push(product);
+  updateCart();
+}
+
+function updateCart(){
+  cartItemsList.innerHTML='';
+  if(cart.length===0){
+    cartItemsList.innerHTML='<li>السلة فارغة</li>';
+    cartTotal.textContent='الإجمالي: 0 أوقية';
+    return;
+  }
+  let total=0;
+  cart.forEach((item,index)=>{
+    total+=item.price;
+    const li=document.createElement('li');
+    li.innerHTML=`
+      ${item.name} - ${item.price} أوقية
+      <button onclick="removeFromCart(${index})">✖</button>
+    `;
+    cartItemsList.appendChild(li);
+  });
+  cartTotal.textContent='الإجمالي: '+total+' أوقية';
+}
+
+function removeFromCart(index){
+  cart.splice(index,1);
+  updateCart();
+}
+
+function filterCategory(category){
+  document.querySelectorAll('nav button').forEach(btn=>btn.classList.remove('active'));
+  event.target.classList.add('active');
+  renderProducts(category);
+}
+
+function searchProducts(){
+  const q=searchInput.value.toLowerCase();
+  const filtered=products.filter(p=>p.name.toLowerCase().includes(q));
+  productsContainer.innerHTML='';
+  filtered.forEach(product=>{
+    const card=document.createElement('article');
+    card.className='product-card';
+    card.innerHTML=`
+      <img src="${product.img}">
+      <div class="product-info">
+        <h3>${product.name}</h3>
+        <p class="description">${product.description}</p>
+        <p class="price">${product.price} أوقية</p>
+        <button onclick="addToCart(${product.id})">أضف إلى السلة</button>
+      </div>
+    `;
+    productsContainer.appendChild(card);
+  });
+}
+
+cartToggleBtn.addEventListener('click',()=>cartSidebar.classList.toggle('open'));
+
+function sendOrderWhatsApp(){
+  if(cart.length===0) return alert('السلة فارغة');
+  const phone="22231513331";
+  let message="طلب جديد من SUNI:%0A";
+  cart.forEach(item=>{
+    message+=`${item.name} - ${item.price} أوقية%0A`;
+  });
+  window.open(`https://wa.me/${phone}?text=${message}`,'_blank');
+}
+
+renderProducts();
+
+</script>
+
 </body>
 </html>
+
 
 
 
